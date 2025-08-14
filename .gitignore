@@ -47,3 +47,4 @@ pip-delete-this-directory.txt
 # ==========================
 __pycache__/
 *.matplotlibrc
+'AI/models/Finetuned_Reg_Binary/Random_Forest___FineTuned.joblib' 
