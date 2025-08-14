@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_rounded_borders"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/title_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/proximanova_Body_Dark"
+                    android:textStyle="bold"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/schedule_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textAppearance="@style/proximanova_Body_Dark"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:hint="Select Date" />
+                <EditText
+                    android:id="@+id/schedule_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:layout_alignParentEnd="true"
+                    android:textAppearance="@style/proximanova_Body_Dark"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:hint="Select Time" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/machine_type_input"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:entries="@array/machine_type_options"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/select_machine_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Machine Name"
+                android:inputType="text"
+                android:completionThreshold="1"
+                android:textAppearance="@style/proximanova_Body_Dark" />
+
+            <TextView
+                android:id="@+id/description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Notes" />
+
+                <EditText
+                    android:id="@+id/schedule_notes_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="@drawable/form_input_feilds"
+                    android:textAppearance="@style/proximanova_Body_Dark"
+                    android:hint="Add Notes" />
+
+
+            <TextView
+                android:id="@+id/schedule_supervisor_comments_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="Supervisor Comments" />
+            <TextView
+                android:id="@+id/supervisor_comments_section"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:padding="8dp"
+                android:background="@drawable/form_input_feilds"
+                android:text="Supervisor comments will appear here." />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SUBMIT"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/accentColor"
+                android:textAppearance="@style/button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

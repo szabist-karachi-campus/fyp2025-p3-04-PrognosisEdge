@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">PrognosisEdge</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="underlined_text"><u>Resend Code</u></string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+
+    <string-array name="date_range_options">
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>Custom Range</item>
+    </string-array>
+
+    <string-array name="status_options">
+        <item>Upcoming</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Cancelled</item>
+        <item>Overdue</item>
+    </string-array>
+
+    <string-array name="machine_list">
+        <item>All Machines</item>
+        <item>Machine A</item>
+        <item>Machine B</item>
+        <item>Machine C</item>
+    </string-array>
+
+    <string-array name="engineer_list">
+        <item>All Engineer</item>
+        <item>Engineer 1</item>
+        <item>Engineer 2</item>
+        <item>Engineer 3</item>
+        <item>Engineer 4</item>
+    </string-array>
+
+    <string-array name="user_role">
+        <item>User Administrator</item>
+        <item>System Supervisor</item>
+        <item>Service Engineer</item>
+    </string-array>
+
+
+    <string-array name="machine_status_options">
+        <item>Operating</item>
+        <item>Off</item>
+        <item>Decommissioned</item>
+    </string-array>
+
+    <string-array name="machine_type_options">
+        <item>Tablet Coating Machine</item>
+        <item>Sterilization Autoclave</item>
+        <item>Ampoule Washing Machine</item>
+        <item>Computer Numerical Control</item>
+    </string-array>
+
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_system_supervisor">SystemSupervisorActivity</string>
+    <string name="title_activity_ua_user_management">UA_UserManagement</string>
+    <string name="title_activity_ua_user_managment">UA_UserManagment</string>
+    <string name="title_activity_ua_user_managment.java">UA_UserManagment.java</string>
+    <string name="title_activity_user_administrator">UserAdministratorActivity</string>
+
+
+
+</resources>

@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_border">
+
+        <!-- Top Section: Name and Prediction -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Machine Name -->
+            <TextView
+                android:id="@+id/machine_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Machine"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:textStyle="bold" />
+
+            <!-- Prediction Badge -->
+            <TextView
+                android:id="@+id/machine_prediction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:background="@drawable/priority_status"
+                android:padding="8dp"
+                android:textAppearance="@style/button" />
+        </LinearLayout>
+
+        <!-- Last Data Section -->
+        <TextView
+            android:id="@+id/machine_last_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Data: N/A"
+            android:textAppearance="@style/proximanova_Body_Dark" />
+
+        <!-- Hidden Details Section -->
+        <LinearLayout
+            android:id="@+id/machine_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/machine_readings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Readings:"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:textSize="12sp"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Expand/Collapse Arrow -->
+        <ImageView
+            android:id="@+id/machine_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/arrow_down" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

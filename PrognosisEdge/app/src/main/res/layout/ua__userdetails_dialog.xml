@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_backgroud">
+
+    <EditText
+        android:id="@+id/user_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textAppearance="@style/proximanova_Body_Dark"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/user_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textAppearance="@style/proximanova_Body_Dark"
+
+        android:inputType="textEmailAddress" />
+
+    <Spinner
+        android:id="@+id/user_role_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/proximanova_Body_Dark"
+        />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update User"
+        android:textAppearance="@style/button"/>
+</LinearLayout>

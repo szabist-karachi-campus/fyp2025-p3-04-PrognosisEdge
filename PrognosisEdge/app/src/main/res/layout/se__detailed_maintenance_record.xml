@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_backgroud">
+
+    <!-- Machine Name and Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/machine_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Machine Name"
+            android:textAppearance="@style/proximanova_Body_Dark"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textAppearance="@style/proximanova_Body_Dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Dates Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/work_order_assigned_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Scheduled Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/proximanova_Body_Dark"
+            android:background="@drawable/form_input_feilds"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/work_order_started_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Started Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/proximanova_Body_Dark"
+            android:background="@drawable/form_input_feilds"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/work_order_ended_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="Ended Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/proximanova_Body_Dark"
+            android:background="@drawable/form_input_feilds"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Engineer Name -->
+    <TextView
+        android:id="@+id/mh_engineer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Engineer"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <!-- Notes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Notes"
+        android:textStyle="bold"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <TextView
+        android:id="@+id/mh_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Notes"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <!-- Comments -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <EditText
+        android:id="@+id/mh_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add comments"
+        android:background="@drawable/form_input_feilds"
+        android:padding="12dp"
+        android:minLines="3"
+        android:maxLines="6"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:textAppearance="@style/proximanova_Body_Dark"
+        android:layout_marginTop="4dp" />
+
+    <!-- Save Comment Button -->
+    <Button
+        android:id="@+id/save_comments_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save Comment"
+        android:textAppearance="@style/button"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"/>
+</LinearLayout>

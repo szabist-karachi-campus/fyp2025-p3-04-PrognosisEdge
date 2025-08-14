@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/machine_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Machine Management"
+        android:background="@drawable/title_border"
+        android:paddingLeft="8dp"
+        android:layout_weight="1"
+        android:textAppearance="@style/orbitron_Heading_Dark"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Subheading -->
+    <TextView
+        android:id="@+id/sub_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/machine_title"
+        android:text="Manage Machines"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <!-- Filters and Add Machine Section -->
+    <LinearLayout
+        android:id="@+id/button_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_heading"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="end">
+
+        <!-- Add Machine Button -->
+        <Button
+            android:id="@+id/add_machine_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add New Machine"
+            android:backgroundTint="@color/accentColor"
+            android:textColor="@color/eggshellColor"
+            android:textAppearance="@style/button" />
+    </LinearLayout>
+
+    <!-- SwipeRefreshLayout wrapping RecyclerView -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_section"
+        android:layout_marginTop="16dp">
+
+        <!-- RecyclerView for displaying machine cards -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/machine_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

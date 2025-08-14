@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/machine_serial_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Serial Number"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <EditText
+        android:id="@+id/machine_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Machine Name"
+        android:textAppearance="@style/proximanova_Body_Dark"/>
+
+    <Spinner
+        android:id="@+id/machine_type_input"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:entries="@array/machine_type_options"
+        android:textAppearance="@style/proximanova_Body_Dark"/>
+
+    <EditText
+        android:id="@+id/machine_location_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Machine Location"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <Spinner
+        android:id="@+id/machine_status_input"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:entries="@array/machine_status_options"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="8dp"
+            android:text="Cancel"
+            android:textAppearance="@style/button"
+            android:backgroundTint="#4E4E58"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/button" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

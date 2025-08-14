@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application Theme -->
+    <style name="Theme.PrognosisEdge" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/accentColor</item>
+        <item name="colorPrimaryDark">@color/textColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <!-- Heading Text Style -->
+    <style name="TextTitle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:fontFamily">@font/orbitron_fontfamily</item>
+    </style>
+
+    <!-- Body Text Style -->
+    <style name="TextBody" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+    </style>
+
+    <!-- Button Text Style -->
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/accentColor</item>
+        <item name="android:textColor">@color/eggshellColor</item>
+        <item name="android:fontFamily">@font/orbitron_fontfamily</item>
+    </style>
+
+</resources>

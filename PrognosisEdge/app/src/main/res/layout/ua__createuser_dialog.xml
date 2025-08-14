@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/user_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <EditText
+        android:id="@+id/user_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+    <EditText
+        android:id="@+id/user_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <Spinner
+        android:id="@+id/user_role_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Role"
+        android:entries="@array/user_role"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/proximanova_Body_Dark" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/button" />
+</LinearLayout>

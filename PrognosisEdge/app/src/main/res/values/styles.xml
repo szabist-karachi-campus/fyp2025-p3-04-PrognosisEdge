@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="orbitron_Heading_white">
+        <item name="android:textColor">@color/eggshellColor</item> <!-- Red text color -->
+        <item name="android:textSize">24sp</item> <!-- Text size -->
+        <item name="android:fontFamily">@font/orbitron_fontfamily</item> <!-- Custom font -->
+    </style>
+    <style name="proximanova_Body_white">
+        <item name="android:textColor">@color/eggshellColor</item> <!-- Red text color -->
+        <item name="android:textSize">16sp</item> <!-- Text size -->
+        <item name="android:fontFamily">@font/proxima_nova_regular</item> <!-- Custom font -->
+    </style>
+
+    <style name="orbitron_Heading_Dark">
+        <item name="android:textColor">@color/textColor</item> <!-- Red text color -->
+        <item name="android:textSize">24sp</item> <!-- Text size -->
+        <item name="android:fontFamily">@font/orbitron_bold</item> <!-- Custom font -->
+    </style>
+    <style name="proximanova_Body_Dark">
+        <item name="android:textColor">@color/textColor</item> <!-- Red text color -->
+        <item name="android:textSize">16sp</item> <!-- Text size -->
+        <item name="android:fontFamily">@font/proxima_nova_regular</item> <!-- Custom font -->
+    </style>
+
+    <style name="MenuItemTextStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/textColor</item> <!-- Change text color -->
+        <item name="android:textSize">14sp</item> <!-- Change text size -->
+        <item name="android:fontFamily">@font/orbitron_bold</item> <!-- Use custom font -->
+    </style>
+
+
+    <style name="proximanova_bold">
+        <item name="android:textColor">@color/textColor</item> <!-- Red text color -->
+        <item name="android:textSize">18sp</item> <!-- Text size -->
+        <item name="android:fontFamily">@font/proxima_nova_bold</item> <!-- Custom font -->
+    </style>
+
+    <style name="button">
+        <item name="android:textColor">@color/eggshellColor</item> <!-- Red text color -->
+        <item name="android:textSize">14sp</item> <!-- Text size -->
+        <item name="android:fontFamily">@font/proxima_nova_bold</item> <!-- Custom font -->
+    </style>
+
+</resources>

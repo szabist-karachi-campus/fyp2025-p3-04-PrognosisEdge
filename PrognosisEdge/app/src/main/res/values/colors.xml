@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accentColor">#FD6746</color>
+    <color name="textColor">#4E4E58</color>
+    <color name="backgroundColor">#FEFDF8</color>
+    <color name="iconColor">#64818C</color>
+    <color name="eggshellColor">#FEFDF8</color>
+    <color name="green">#D1ECBF</color>
+    <color name="orange">#FBB1A1</color>
+    <color name="pink">#FFE2E7</color>
+    <color name="yellow">#FFF1B8</color>
+    <color name="blue">#E3ECFD</color>
+
+
+
+
+    <color name="priority_high">#FD5246</color> <!-- Red -->
+    <color name="priority_moderate">#FDD846</color> <!-- Yellow -->
+    <color name="priority_on">#62C839</color> <!-- Green -->
+
+    <color name="default_color">#CCCCCC</color> <!-- Default Gray -->
+
+    <color name="Assigned">#4E4E58</color>
+    <color name="on_going">#E0DFDF</color>
+    <color name="completed">#FEFDF8</color>
+
+</resources>

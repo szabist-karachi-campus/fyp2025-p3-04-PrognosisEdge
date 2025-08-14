@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="20sp"
+        android:textAppearance="@style/orbitron_Heading_Dark"
+        android:textColor="@color/textColor"/>
+    <TextView
+        android:id="@+id/dialogSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Enter the code sent on your registered email"
+        android:textSize="15sp"
+        android:textAppearance="@style/proximanova_Body_Dark"/>
+
+    <LinearLayout
+        android:id="@+id/otp_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/otp_digit_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textSize="24sp"
+            android:background="@drawable/otp_box"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/otp_digit_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textSize="24sp"
+            android:background="@drawable/otp_box"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/otp_digit_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textSize="24sp"
+            android:background="@drawable/otp_box"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/otp_digit_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textSize="24sp"
+            android:background="@drawable/otp_box"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/otp_digit_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textSize="24sp"
+            android:background="@drawable/otp_box"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/otp_digit_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textSize="24sp"
+            android:background="@drawable/otp_box"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="SUBMIT"
+            android:textAppearance="@style/button" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resendOtpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="@string/underlined_text"
+        android:textAppearance="@style/proximanova_bold"
+        android:textColor="@color/textColor"
+        android:textSize="14sp" />
+</LinearLayout>
+
+
+

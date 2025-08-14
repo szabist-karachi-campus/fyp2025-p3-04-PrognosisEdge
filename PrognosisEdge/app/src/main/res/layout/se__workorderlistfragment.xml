@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginBottom="10dp"/>
+
+<!--    &lt;!&ndash; Filter Options (Machine, Status, etc.) &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="end"-->
+<!--        android:paddingBottom="8dp">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/open_filter_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Filter"-->
+<!--            android:backgroundTint="@color/accentColor"-->
+<!--            android:textColor="@color/eggshellColor" />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/work_order_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/orbitron_Heading_Dark"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/work_order_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

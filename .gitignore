@@ -1,0 +1,49 @@
+# ==========================
+# ANDROID STUDIO-SPECIFIC
+# ==========================
+/PrognosisEdge/app/build/
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ==========================
+# FLASK-SPECIFIC
+# ==========================
+venv/                  # Virtual environment folder
+*.pyc                  # Compiled Python files
+__pycache__/           # Cache folder
+instance/              # Flask instance folder
+.env                   # Environment variables
+*.log                  # Log files
+*.db                   # Local SQLite or test databases
+
+# ==========================
+# PYTHON GENERAL
+# ==========================
+*.pyo
+*.pyd
+.Python
+ENV/
+env/
+ENV.bak/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================
+# VISUALISATION CACHE
+# ==========================
+__pycache__/
+*.matplotlibrc

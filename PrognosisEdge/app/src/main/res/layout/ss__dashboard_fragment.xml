@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eggshellColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboard_workorder_card"
+            android:padding="20dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:src="@drawable/power" />
+
+            <TextView
+                android:id="@+id/greeting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Good morning"
+                android:textSize="24sp"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:textStyle="bold"
+                tools:text="Good morning, Shahzeb" />
+
+            <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/todays_work_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Latest Maintenance Logs"
+                android:textSize="24sp"
+                android:textAppearance="@style/proximanova_Body_Dark" />
+
+            <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <ImageView
+                android:id="@+id/calendar_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/calender"
+                android:contentDescription="Calendar Icon"
+                android:layout_gravity="center_horizontal" />
+
+            <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/todays_work_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start with what's happening today"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:layout_gravity="center_horizontal" />
+
+            <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <Button
+                android:id="@+id/view_ss_logs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW LOGS"
+                android:layout_marginBottom="5dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="32dp"
+                android:textStyle="bold"
+                android:textAppearance="@style/proximanova_Body_Dark"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <!-- Machine Predictions Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/machine_predictions_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine Predictions"
+                android:background="@drawable/title_border"
+                android:textAppearance="@style/orbitron_Heading_Dark"
+                android:paddingLeft="8dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Dynamic container -->
+            <LinearLayout
+                android:id="@+id/machine_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

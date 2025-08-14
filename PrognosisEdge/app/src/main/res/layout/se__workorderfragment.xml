@@ -1,0 +1,197 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/dashboard_workorder_card">
+        <TextView
+            android:id="@+id/work_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Orders"
+            android:background="@drawable/title_border"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/orbitron_Heading_Dark"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay updated \nabout your \nwork."
+                android:padding="10dp"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/exam" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/workorder_status">
+
+            <TextView
+                android:id="@+id/all_work_orders_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="All Work Orders"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+            <TextView
+                android:id="@+id/all_work_orders_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/workorder_status">
+
+            <TextView
+                android:id="@+id/Upcoming_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upcoming"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+            <TextView
+                android:id="@+id/Upcoming_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/workorder_status">
+
+            <TextView
+                android:id="@+id/in_process_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="In Progress"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+            <TextView
+                android:id="@+id/in_process_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/workorder_status">
+
+            <TextView
+                android:id="@+id/completed_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Completed"
+                android:textAppearance="@style/proximanova_Body_Dark" />
+
+            <TextView
+                android:id="@+id/completed_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/workorder_status">
+
+            <TextView
+                android:id="@+id/overdue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Overdue"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+            <TextView
+                android:id="@+id/overdue_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/workorder_status">
+
+            <TextView
+                android:id="@+id/cancelled_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancelled"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+            <TextView
+                android:id="@+id/cancelled_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/proximanova_Body_Dark"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

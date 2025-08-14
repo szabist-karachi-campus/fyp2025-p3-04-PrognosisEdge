@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eggshellColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                android:contentDescription="Back" />
+
+            <!-- Report Title -->
+            <TextView
+                android:id="@+id/report_title"
+                style="@style/orbitron_Heading_Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Order Analytics"
+                android:paddingTop="12dp"
+                android:paddingBottom="4dp" />
+
+            <!-- Work Order Summary Label -->
+            <TextView
+                android:id="@+id/work_order_summary_title"
+                style="@style/proximanova_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Order Summary"
+                android:paddingBottom="4dp" />
+
+            <!-- Summary stats -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/stat_total_work_orders"
+                    style="@style/proximanova_Body_Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Work Orders: " />
+
+                <TextView
+                    android:id="@+id/stat_completed"
+                    style="@style/proximanova_Body_Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed: " />
+
+                <TextView
+                    android:id="@+id/stat_in_progress"
+                    style="@style/proximanova_Body_Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Progress: " />
+
+                <TextView
+                    android:id="@+id/stat_avg_completion"
+                    style="@style/proximanova_Body_Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Average Completion: " />
+            </LinearLayout>
+
+            <!-- Chart 1: Status Distribution Pie Chart -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Order Status Distribution"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:textAppearance="@style/proximanova_Body_Dark" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/status_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Chart 2: Completion Analysis Horizontal Bar Chart -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completion vs Pending Analysis"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:textAppearance="@style/proximanova_Body_Dark" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/completion_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Chart 3: Performance Metrics Bar Chart -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performance Metrics"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:textAppearance="@style/proximanova_Body_Dark" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/performance_chart"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Increased bottom padding to prevent FAB and bottom nav overlap -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button for PDF Export - positioned higher -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_export_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_download"
+        android:contentDescription="Export to PDF"
+        app:backgroundTint="#FD6746"
+        app:tint="#FFFFFF"
+        app:borderWidth="0dp"
+        app:elevation="6dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

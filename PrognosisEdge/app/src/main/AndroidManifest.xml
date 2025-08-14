@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- For Android 10 and below -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PrognosisEdge">
+
+        <receiver android:name=".PredictionBroadcastReceiver" />
+
+        <service
+        android:name=".PredictionBroadcastReceiver"
+        android:exported="false"
+        android:foregroundServiceType="dataSync"/>
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge" />
+
+        <activity
+            android:name=".ForgetpasswordActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge" />
+
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge" />
+
+        <activity
+            android:name=".ServiceEngineerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge" />
+
+        <activity
+            android:name=".SystemSupervisorActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge" />
+
+        <activity
+            android:name=".UserAdministratorActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrognosisEdge" />
+
+    </application>
+
+</manifest>

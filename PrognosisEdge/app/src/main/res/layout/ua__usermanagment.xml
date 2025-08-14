@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:src="@drawable/power" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Management"
+        android:background="@drawable/title_border"
+        android:paddingLeft="8dp"
+        android:textAppearance="@style/orbitron_Heading_Dark"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <!-- Filters and Add Machine Section -->
+    <LinearLayout
+        android:id="@+id/button_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_heading"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="end">
+
+<!--        &lt;!&ndash; Filter Button &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/open_filter_button"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:backgroundTint="@color/accentColor"-->
+<!--            android:text="Filter"-->
+<!--            android:textAppearance="@style/button"-->
+<!--            android:textColor="@color/eggshellColor"-->
+<!--            android:layout_marginEnd="8dp" />-->
+
+        <!-- Create User Button -->
+        <Button
+            android:id="@+id/create_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Create User"
+            android:textAppearance="@style/proximanova_bold"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

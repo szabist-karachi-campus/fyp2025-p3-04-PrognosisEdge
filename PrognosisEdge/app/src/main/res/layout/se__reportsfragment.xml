@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/eggshellColor">
+
+    <!-- Date selection block -->
+    <LinearLayout
+        android:id="@+id/date_selection_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/dashboard_workorder_card">
+
+        <TextView
+            android:id="@+id/title_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Order Reports"
+            android:layout_marginTop="11dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/title_border"
+            android:textAppearance="@style/orbitron_Heading_Dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your desired \ndates and\ngenerate work order reports"
+            android:padding="10dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/proximanova_Body_Dark"/>
+
+        <EditText
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Start Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_input" />
+
+        <EditText
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select End Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:padding="12dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/rounded_input" />
+
+        <Button
+            android:id="@+id/generate_report_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENERATE"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/button"
+            android:backgroundTint="@color/accentColor"
+            android:background="@drawable/rounded_button_white" />
+    </LinearLayout>
+
+    <!-- Latest Reports Header -->
+    <TextView
+        android:id="@+id/latest_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Latest Work Order Reports"
+        android:background="@drawable/title_border"
+        android:textStyle="bold"
+        android:textAppearance="@style/proximanova_Body_Dark"/>
+
+    <!-- Scrollable Report Sections -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/reports_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+    </ScrollView>
+</LinearLayout>
