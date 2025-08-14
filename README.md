@@ -69,8 +69,10 @@ An Android app (built in Java/XML) is provided for both:
 
 - **System Supervisors**: Generate reports, add machines, assign tasks  
 - **Service Engineers**: Update work orders, view predictions, schedule maintenance
+- **User Administrators**: Manage Users
 
-> Uses Retrofit for API calls, Live WebSocket updates, custom UI with Orbitron and Proxima Nova fonts.
+> Uses Retrofit for API calls and Live WebSocket updates
+> Custom UI with Orbitron and Proxima Nova fonts
 
 ---
 
@@ -102,7 +104,7 @@ The backend provides:
       │
 ┌─────┴─────────────────────────────┐
 │        Machine Learning Models     │
-│ (Scikit-learn, TensorFlow, MLflow) │
+│            (Scikit-learn)          │
 └─────▲─────────────────────────────┘
       │
       │
@@ -120,9 +122,9 @@ The backend provides:
 | **Frontend (Mobile)** | Java, XML, Retrofit, MPAndroidChart |
 | **Backend**           | Python, Flask, Flask-SocketIO |
 | **Database**          | PostgreSQL |
-| **Machine Learning**  | Scikit-learn, TensorFlow, MLflow |
+| **Machine Learning**  | Scikit-learn |
 | **Data Preprocessing**| Pandas, NumPy, SMOTE-ENN, Feature Selection |
-| **Hosting**           | Local server (development), Cloud-ready architecture |
+| **Hosting**           | Local server (development) |
 
 
 PrognosisEdge/
