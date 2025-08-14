@@ -23,7 +23,7 @@
 
 **PrognosisEdge** is a full-stack predictive maintenance system developed for the manufacturing industry. It uses historical IoT sensor data and supervised ML models to predict machine failures and generate maintenance reports.
 
-This repository contains the **Android App**, **AI models**, **Flask APIs**, **database scripts**, **notebooks**, and all supporting **final documentation**.
+This repository contains the **Android App**, **AI models**, **Flask APIs**, **database scripts**, **notebooks**.
 
 ---
 
@@ -32,9 +32,7 @@ This repository contains the **Android App**, **AI models**, **Flask APIs**, **d
 PrognosisEdge/
 ├── AI/                   # ML models, SHAP plots, evaluation notebooks
 ├── APIs/                 # Flask backend: REST + WebSocket
-├── Documentation/        # SRS, SDS, Test Cases, Proposal, User Manual, etc.
 ├── PrognosisEdge/        # Android Studio project
-├── Resources/            # Icons, fonts, assets, report templates
 ├── DB Script.sql         # PostgreSQL schema for users, machines, logs, etc.
 ├── README.md             # This file
 └── .gitignore
