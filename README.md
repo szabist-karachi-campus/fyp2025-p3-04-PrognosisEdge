@@ -67,7 +67,7 @@ Trained ML models use historical machine sensor data for:
 
 An Android app (built in Java/XML) is provided for both:
 
-- **System Supervisors**: Generate reports, add machines, assign tasks  
+- **System Supervisors**: Generate reports, add machines, add comments  
 - **Service Engineers**: Update work orders, view predictions, schedule maintenance
 - **User Administrators**: Manage Users
 
@@ -125,15 +125,6 @@ The backend provides:
 | **Machine Learning**  | Scikit-learn |
 | **Data Preprocessing**| Pandas, NumPy, SMOTE-ENN, Feature Selection |
 | **Hosting**           | Local server (development) |
-
-
-PrognosisEdge/
-├── AI/                  # ML models, SHAP plots, evaluation notebooks
-├── APIs/                 # Flask backend: REST + WebSocket
-├── PrognosisEdge/        # Android Studio project
-├── DB Script.sql         # PostgreSQL schema
-├── README.md             # Project overview
-└── .gitignore
 
 ---
 
